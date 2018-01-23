@@ -6,7 +6,7 @@ import { HomePage } from '../HomePage';
 import { TestPage } from '../TestPage';
 
 import '../_content/app.less';
-import '../_content/modal.less';
+import '../_content/jw-modal.less';
 
 class App extends React.Component {
     render() {
