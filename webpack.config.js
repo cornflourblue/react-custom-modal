@@ -1,25 +1,16 @@
-var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.jsx',
-    output: {
-        path: path.resolve('dist'),
-        filename: 'bundle.js'
-    },
+    mode: 'development',
     resolve: {
         extensions: ['.js', '.jsx']
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.jsx?$/,
-                exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['react', 'env', 'stage-0']
-                }
+                loader: 'babel-loader'
             },
             {
                 test: /\.less$/,
@@ -31,11 +22,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './src/index.html',
-            filename: 'index.html',
-            inject: 'body'
-        }),
+        new HtmlWebpackPlugin({ template: './src/index.html' }),
         new ExtractTextPlugin('[name].css')
     ],
     devServer: {

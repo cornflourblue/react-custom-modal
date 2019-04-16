@@ -1,34 +1,35 @@
 {
-  "name": "react-custom-modal",
-  "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cornflourblue/react-custom-modal.git"
-  },
-  "license": "MIT",
-  "scripts": {
-    "start": "webpack-dev-server --open"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-router-dom": "^4.1.2"
-  },
-  "devDependencies": {
-    "babel-core": "^6.21.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^0.28.8",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "html-webpack-plugin": "^2.26.0",
-    "less": "^2.7.3",
-    "less-loader": "^4.0.5",
-    "path": "^0.12.7",
-    "style-loader": "^0.19.1",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
-  }
+    "name": "react-custom-modal",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cornflourblue/react-custom-modal.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "start": "webpack-dev-server --open"
+    },
+    "dependencies": {
+        "prop-types": "^15.6.0",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "react-router-dom": "^4.1.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/preset-env": "^7.4.3",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.5",
+        "css-loader": "^2.1.1",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "html-webpack-plugin": "^3.2.0",
+        "less": "^3.9.0",
+        "less-loader": "^4.1.0",
+        "path": "^0.12.7",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0",
+        "webpack-dev-server": "^3.2.1"
+    }
 }
